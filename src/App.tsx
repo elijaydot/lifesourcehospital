@@ -10,20 +10,26 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 to-secondary/5">
-      <AuthProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/auth" element={<AuthPage />} />
-            <Route path="/" element={<AppLayout />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </AuthProvider>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <div className="min-h-screen bg-gradient-to-br from-primary/5 to-secondary/5">
+          <AuthProvider>
+            <Toaster />
+            <Sonner />
+            <BrowserRouter>
+              <Routes>
+                <Route path="/auth" element={<AuthPage />} />
+                <Route path="/" element={<AppLayout />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </BrowserRouter>
+          </AuthProvider>
+        </div>
+      </TooltipProvider>
+    </QueryClientProvider>
   );
+};
 
 export default App;
