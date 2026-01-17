@@ -21,16 +21,16 @@ export default function AppLayout() {
     );
   }
 
-  if (!user) {
-    return <Navigate to="/auth" replace />;
-  }
-
-  if (!profile) {
+  // If no user or profile, show a default welcome page
+  if (!user || !profile) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="text-center space-y-4">
-          <Loader2 className="h-8 w-8 animate-spin text-primary mx-auto" />
-          <p className="text-muted-foreground">Setting up your profile...</p>
+          <h1 className="text-3xl font-bold text-primary">Welcome to LifeSource</h1>
+          <p className="text-muted-foreground">Blood Bank Management System</p>
+          <a href="/auth" className="inline-block mt-4 px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+            Sign In
+          </a>
         </div>
       </div>
     );
