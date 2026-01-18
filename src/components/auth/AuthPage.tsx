@@ -8,6 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Loader2, Heart, Shield } from 'lucide-react';
+import Logo from "@/assets/logo.svg";
+import LogoText from "@/assets/logo-text.svg";
 
 export default function AuthPage() {
   const { user, loading, signIn, signUp } = useAuth();
@@ -29,11 +31,15 @@ export default function AuthPage() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 to-secondary/5 p-4">
       <div className="w-full max-w-md space-y-6">
         <div className="text-center space-y-2">
-          <div className="flex items-center justify-center gap-2 mb-4">
+          {/* <div className="flex items-center justify-center gap-2 mb-4">
             <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full">
               <Heart className="w-6 h-6 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-foreground">LifeSource</h1>
+          </div> */}
+          <div className="flex justify-center items-center gap-3">
+            <img src={Logo} alt="LifeSourceAdmin" className="w-16 h-16" />
+            <img src={LogoText} alt="LifeSourceAdmin" className="w-[120px]" />
           </div>
           <p className="text-muted-foreground">
             Blood Donation Management Platform
