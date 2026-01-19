@@ -13,48 +13,49 @@ All colors MUST be HSL.
     @apply font-sans;
   }
   :root {
-    /* Healthcare-themed design system */
+    /* LifeSource branded design system - Red & Teal from logo */
     --background: 0 0% 100%;
-    --foreground: 213 31% 15%;
+    --foreground: 0 0% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 213 31% 15%;
+    --card-foreground: 0 0% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 213 31% 15%;
+    --popover-foreground: 0 0% 12%;
 
-    /* Medical blue primary */
-    --primary: 213 94% 40%;
+    /* Primary: Medical Red from logo #D32F2F */
+    --primary: 0 70% 51%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 213 94% 50%;
-    --primary-glow: 213 94% 70%;
+    --primary-light: 0 70% 60%;
+    --primary-glow: 0 70% 70%;
 
-    /* Soft green secondary for positive actions */
-    --secondary: 142 71% 45%;
+    /* Secondary: Teal from logo #008080 */
+    --secondary: 180 100% 25%;
     --secondary-foreground: 0 0% 100%;
+    --secondary-light: 180 70% 35%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 213 25% 55%;
+    --muted: 180 10% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    /* Warm accent for highlights */
-    --accent: 213 94% 95%;
-    --accent-foreground: 213 94% 40%;
+    /* Teal accent for highlights */
+    --accent: 180 50% 95%;
+    --accent-foreground: 180 100% 25%;
 
-    /* Medical red for urgent/critical */
-    --destructive: 0 84% 60%;
+    /* Red for urgent/destructive */
+    --destructive: 0 70% 51%;
     --destructive-foreground: 0 0% 100%;
 
     /* Warm yellow for warnings */
     --warning: 43 96% 56%;
-    --warning-foreground: 213 31% 15%;
+    --warning-foreground: 0 0% 12%;
 
     /* Success green */
     --success: 142 71% 45%;
     --success-foreground: 0 0% 100%;
 
-    --border: 213 27% 84%;
-    --input: 213 27% 84%;
-    --ring: 213 94% 40%;
+    --border: 180 15% 85%;
+    --input: 180 15% 85%;
+    --ring: 180 100% 25%;
 
     --radius: 0.75rem;
 
@@ -64,22 +65,22 @@ All colors MUST be HSL.
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
 
     /* Professional shadows */
-    --shadow-card: 0 4px 12px -2px hsl(var(--primary) / 0.08);
-    --shadow-elevated: 0 8px 24px -4px hsl(var(--primary) / 0.12);
+    --shadow-card: 0 4px 12px -2px hsl(var(--secondary) / 0.08);
+    --shadow-elevated: 0 8px 24px -4px hsl(var(--secondary) / 0.12);
     --shadow-primary: 0 4px 16px -2px hsl(var(--primary) / 0.24);
 
     /* Sidebar healthcare theme */
-    --sidebar-background: 213 27% 97%;
-    --sidebar-foreground: 213 31% 25%;
-    --sidebar-primary: 213 94% 40%;
+    --sidebar-background: 180 15% 97%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 180 100% 25%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 213 94% 95%;
-    --sidebar-accent-foreground: 213 94% 40%;
-    --sidebar-border: 213 27% 88%;
-    --sidebar-ring: 213 94% 40%;
+    --sidebar-accent: 180 50% 95%;
+    --sidebar-accent-foreground: 180 100% 25%;
+    --sidebar-border: 180 15% 88%;
+    --sidebar-ring: 180 100% 25%;
 
     /* Status colors for blood types and urgency */
-    --blood-critical: 0 84% 60%;
+    --blood-critical: 0 70% 51%;
     --blood-high: 25 95% 53%;
     --blood-medium: 43 96% 56%;
     --blood-low: 142 71% 45%;
@@ -89,41 +90,42 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 213 31% 9%;
+    --background: 180 15% 9%;
     --foreground: 0 0% 95%;
 
-    --card: 213 31% 12%;
+    --card: 180 15% 12%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 213 31% 12%;
+    --popover: 180 15% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 213 94% 50%;
+    --primary: 0 70% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 213 94% 60%;
-    --primary-glow: 213 94% 70%;
+    --primary-light: 0 70% 65%;
+    --primary-glow: 0 70% 75%;
 
-    --secondary: 142 71% 50%;
+    --secondary: 180 80% 35%;
     --secondary-foreground: 0 0% 100%;
+    --secondary-light: 180 70% 45%;
 
-    --muted: 213 31% 15%;
-    --muted-foreground: 213 15% 70%;
+    --muted: 180 15% 15%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 213 31% 20%;
-    --accent-foreground: 213 94% 50%;
+    --accent: 180 30% 20%;
+    --accent-foreground: 180 80% 50%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 100%;
 
     --warning: 43 96% 56%;
-    --warning-foreground: 213 31% 15%;
+    --warning-foreground: 0 0% 12%;
 
     --success: 142 71% 50%;
     --success-foreground: 0 0% 100%;
 
-    --border: 213 31% 18%;
-    --input: 213 31% 18%;
-    --ring: 213 94% 50%;
+    --border: 180 15% 18%;
+    --input: 180 15% 18%;
+    --ring: 180 80% 40%;
 
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
@@ -133,16 +135,16 @@ All colors MUST be HSL.
     --shadow-elevated: 0 8px 24px -4px hsl(0 0% 0% / 0.20);
     --shadow-primary: 0 4px 16px -2px hsl(var(--primary) / 0.30);
 
-    --sidebar-background: 213 31% 12%;
+    --sidebar-background: 180 15% 12%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 213 94% 50%;
+    --sidebar-primary: 180 80% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 213 31% 18%;
-    --sidebar-accent-foreground: 213 94% 50%;
-    --sidebar-border: 213 31% 18%;
-    --sidebar-ring: 213 94% 50%;
+    --sidebar-accent: 180 30% 18%;
+    --sidebar-accent-foreground: 180 80% 50%;
+    --sidebar-border: 180 15% 18%;
+    --sidebar-ring: 180 80% 40%;
 
-    --blood-critical: 0 84% 60%;
+    --blood-critical: 0 70% 55%;
     --blood-high: 25 95% 53%;
     --blood-medium: 43 96% 56%;
     --blood-low: 142 71% 50%;
